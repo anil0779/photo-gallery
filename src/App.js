@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import SearchBar from './components/search-bar/index';
+import PhotoList from './components/photo-list/index';
 
 function App() {
   return (
@@ -7,6 +9,8 @@ function App() {
       <header className="App-header">
         Photo Gallery
       </header>
+      <SearchBar />
+      <PhotoList />
     </div>
   );
 }
