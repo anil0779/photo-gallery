@@ -1,0 +1,36 @@
+.photos {
+    /* Prevent vertical gaps */
+    line-height: 0;
+     
+    -webkit-column-count: 4;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    4;
+    -moz-column-gap:      0px;
+    column-count:         4;
+    column-gap:           0px;  
+  }
+
+  .photos div {
+    padding: 0.2rem;
+    position: relative;
+    overflow: auto;
+  }
+  
+  .photos div img.photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .photos div img.like-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  @media (max-width: 400px) {
+    .photos {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  }

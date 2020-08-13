@@ -11,7 +11,7 @@ function SearchBar(props) {
 
     return (
         <form onSubmit={onSubmit} className={'search-bar'}>
-            <label for="search-photo-keyword">Search Photos </label>
+            <label htmlFor="search-photo-keyword">Search Photos </label>
             <input type="text" name="search-photo-keyword" />
             <input type="submit" value="Submit" />
         </form>

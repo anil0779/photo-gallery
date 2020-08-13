@@ -1,5 +1,6 @@
 import React from 'react';
 import Photo from './../photo/index';
+import './index.css';
 
 function PhotoList(props) {
     
@@ -9,8 +10,8 @@ function PhotoList(props) {
         <div className={'photo-list-wrapper'}>
             <div className={'photos'}>
                 {
-                    photos.length > 0 && photos.map((photo, idx) => {
-                        return <Photo key={idx} {...photo}/>
+                    photos.length > 0 && photos.map((photo) => {
+                        return <Photo key={photo.id} {...photo}/>
                     })
                 }
             </div>

@@ -1,11 +1,14 @@
 import React from 'react';
+import Like from './../like-button/index';
 
 function Photo(props) {
-    const { src, alt } = props;
+    const { urls = {} } = props;
+    const { small } = urls;
 
     return (
         <div>
-            <image src={src} alt={alt} />
+            <Like />
+            <img src={small} className={"photo"} />
         </div>
     )
 }
