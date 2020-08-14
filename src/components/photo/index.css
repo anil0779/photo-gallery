@@ -1,0 +1,25 @@
+.scrollable-image {
+    overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollable-image::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollable-image {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.photo-wrapper {
+    padding: 0.2rem;
+    position: relative;
+    max-height: initial;
+  }
+  
+.photo-wrapper img.photo {
+    width: 100%;
+    height: auto;
+}

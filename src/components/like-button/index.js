@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LikeIcon from './../../../src/love-24.png';
 import LikeIconActive from './../../../src/love-48.png';
+import './index.css';
 
 function Like(props) {
     const [likedStatus, setLikedStatus] = useState(false);

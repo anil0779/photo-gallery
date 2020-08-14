@@ -10,24 +10,8 @@
     column-gap:           0px;  
   }
 
-  .photos div {
-    padding: 0.2rem;
-    position: relative;
-    overflow: auto;
-  }
-  
-  .photos div img.photo {
-    width: 100%;
-    height: auto;
-  }
-
-  .photos div img.like-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
-
-  @media (max-width: 400px) {
+   /* mobiles */
+  @media (max-width: 768px) {
     .photos {
     -moz-column-count:    1;
     -webkit-column-count: 1;

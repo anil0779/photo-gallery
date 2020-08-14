@@ -1,0 +1,7 @@
+.zoom-bar{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 9;
+    opacity: 0.7;
+}
