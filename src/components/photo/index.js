@@ -15,8 +15,14 @@ function Photo(props) {
         setShowZoom(true);
     }
 
+    const handleMouseLeave = () => {
+        // reset the image size on mouse leave
+        imgRef.current.style.width = '100%';
+        setShowZoom(false);
+    }
+
     return (
-        <div className={'photo-wrapper'}>
+        <div className={'photo-wrapper'} onMouseLeave={handleMouseLeave}>
             {showZoom && <Zoom imgRef={imgRef} />}
             <Like />
             <div className={'scrollable-image'}>

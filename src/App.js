@@ -12,7 +12,7 @@ function App() {
     getPhotos().then((resp)=> {
       setPhotos(resp);
     })
-  })
+  }, []) // component did mount equivalent
 
 
 
