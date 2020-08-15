@@ -9,20 +9,27 @@ function App() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    getPhotos().then((resp)=> {
+    getPhotos().then((resp) => {
       setPhotos(resp);
     })
   }, []) // component did mount equivalent
 
-
+  const fetchSearchResult = (keyword) => {
+    getPhotos(keyword).then((resp) => {
+      resp.results && resp.results.length === 0 ?
+        alert('No search Results found. Go to Home Page?')
+        :
+        setPhotos(resp.results);
+    })
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         Photo Gallery
       </header>
-      <SearchBar />
-      <PhotoList photos={photos}/>
+      <SearchBar onSearch={fetchSearchResult} />
+      <PhotoList photos={photos} />
     </div>
   );
 }
